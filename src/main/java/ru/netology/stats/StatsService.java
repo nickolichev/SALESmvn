@@ -4,19 +4,6 @@ public class StatsService {
 
     public int sum(int[] statistic) {
 
-        statistic[0] = 8;
-        statistic[1] = 15;
-        statistic[2] = 13;
-        statistic[3] = 15;
-        statistic[4] = 17;
-        statistic[5] = 20;
-        statistic[6] = 19;
-        statistic[7] = 20;
-        statistic[8] = 7;
-        statistic[9] = 14;
-        statistic[10] = 14;
-        statistic[11] = 18;
-
         int sum = 0;
 
         for (int i = 0; i < statistic.length; i++) {
@@ -26,20 +13,7 @@ public class StatsService {
         return sum;
     }
 
-    public double meanSum(long[] statistic) {
-
-        statistic[0] = 8;
-        statistic[1] = 15;
-        statistic[2] = 13;
-        statistic[3] = 15;
-        statistic[4] = 17;
-        statistic[5] = 20;
-        statistic[6] = 19;
-        statistic[7] = 20;
-        statistic[8] = 7;
-        statistic[9] = 14;
-        statistic[10] = 14;
-        statistic[11] = 18;
+    public long meanSum(long[] statistic) {
 
         int sum = 0;
 
@@ -52,19 +26,6 @@ public class StatsService {
     }
 
     public long maxSales(long[] statistic) {
-
-        statistic[0] = 8;
-        statistic[1] = 15;
-        statistic[2] = 13;
-        statistic[3] = 15;
-        statistic[4] = 17;
-        statistic[5] = 20;
-        statistic[6] = 19;
-        statistic[7] = 20;
-        statistic[8] = 7;
-        statistic[9] = 14;
-        statistic[10] = 14;
-        statistic[11] = 18;
 
         int maxMonth = 0;
         int month = 0;
@@ -80,19 +41,6 @@ public class StatsService {
 
     public long minSales(long[] statistic) {
 
-        statistic[0] = 8;
-        statistic[1] = 15;
-        statistic[2] = 13;
-        statistic[3] = 15;
-        statistic[4] = 17;
-        statistic[5] = 20;
-        statistic[6] = 19;
-        statistic[7] = 20;
-        statistic[8] = 7;
-        statistic[9] = 14;
-        statistic[10] = 14;
-        statistic[11] = 18;
-
         int minMonth = 0;
         int month = 0;
         for (long sale : statistic) {
@@ -106,19 +54,6 @@ public class StatsService {
     }
 
     public long underMeanSales(long[] statistic) {
-
-        statistic[0] = 8;
-        statistic[1] = 15;
-        statistic[2] = 13;
-        statistic[3] = 15;
-        statistic[4] = 17;
-        statistic[5] = 20;
-        statistic[6] = 19;
-        statistic[7] = 20;
-        statistic[8] = 7;
-        statistic[9] = 14;
-        statistic[10] = 14;
-        statistic[11] = 18;
 
         int sum = 0;
 
@@ -137,19 +72,6 @@ public class StatsService {
     }
 
     public long upMeanSales(long[] statistic) {
-
-        statistic[0] = 8;
-        statistic[1] = 15;
-        statistic[2] = 13;
-        statistic[3] = 15;
-        statistic[4] = 17;
-        statistic[5] = 20;
-        statistic[6] = 19;
-        statistic[7] = 20;
-        statistic[8] = 7;
-        statistic[9] = 14;
-        statistic[10] = 14;
-        statistic[11] = 18;
 
         int sum = 0;
 

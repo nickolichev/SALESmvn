@@ -11,7 +11,7 @@ public class StatsServiceTest {
 
         StatsService service = new StatsService();
 
-        int[] statistic = new int[12];
+        int[] statistic = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         int actual = service.sum(statistic);
         int expected = 8 + 15 + 13 + 15 + 17 + 20 + 19 + 20 + 7 + 14 + 14 + 18;
@@ -24,10 +24,10 @@ public class StatsServiceTest {
 
         StatsService service = new StatsService();
 
-        long[] statistic = new long[12];
+        long[] statistic = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
-        double actual = service.meanSum(statistic);
-        double expected = (8 + 15 + 13 + 15 + 17 + 20 + 19 + 20 + 7 + 14 + 14 + 18) / 12;
+        long actual = service.meanSum(statistic);
+        long expected = (8 + 15 + 13 + 15 + 17 + 20 + 19 + 20 + 7 + 14 + 14 + 18) / 12;
 
         Assertions.assertEquals(actual, expected);
     }
@@ -37,7 +37,7 @@ public class StatsServiceTest {
 
         StatsService service = new StatsService();
 
-        long[] statistic = new long[12];
+        long[] statistic = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         long actual = service.maxSales(statistic);
         long expected = 7;
@@ -50,7 +50,7 @@ public class StatsServiceTest {
 
         StatsService service = new StatsService();
 
-        long[] statistic = new long[12];
+        long[] statistic = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         long actual = service.minSales(statistic);
         long expected = 8;
@@ -63,7 +63,7 @@ public class StatsServiceTest {
 
         StatsService service = new StatsService();
 
-        long[] statistic = new long[12];
+        long[] statistic = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         long actual = service.underMeanSales(statistic);
         long expected = 5;
@@ -76,7 +76,7 @@ public class StatsServiceTest {
 
         StatsService service = new StatsService();
 
-        long[] statistic = new long[12];
+        long[] statistic = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         long actual = service.upMeanSales(statistic);
         long expected = 5;
