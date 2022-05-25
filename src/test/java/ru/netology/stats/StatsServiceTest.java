@@ -24,10 +24,10 @@ public class StatsServiceTest {
 
         StatsService service = new StatsService();
 
-        long[] statistic = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        int[] statistic = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
-        long actual = service.meanSum(statistic);
-        long expected = (8 + 15 + 13 + 15 + 17 + 20 + 19 + 20 + 7 + 14 + 14 + 18) / 12;
+        int actual = service.meanSum(statistic);
+        int expected = (8 + 15 + 13 + 15 + 17 + 20 + 19 + 20 + 7 + 14 + 14 + 18) / 12;
 
         Assertions.assertEquals(actual, expected);
     }
@@ -37,10 +37,10 @@ public class StatsServiceTest {
 
         StatsService service = new StatsService();
 
-        long[] statistic = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        int[] statistic = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
-        long actual = service.maxSales(statistic);
-        long expected = 7;
+        int actual = service.maxSales(statistic);
+        int expected = 7;
 
         Assertions.assertEquals(actual, expected);
     }
@@ -50,10 +50,10 @@ public class StatsServiceTest {
 
         StatsService service = new StatsService();
 
-        long[] statistic = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        int[] statistic = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
-        long actual = service.minSales(statistic);
-        long expected = 8;
+        int actual = service.minSales(statistic);
+        int expected = 8;
 
         Assertions.assertEquals(actual, expected);
     }
@@ -63,10 +63,10 @@ public class StatsServiceTest {
 
         StatsService service = new StatsService();
 
-        long[] statistic = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        int[] statistic = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
-        long actual = service.underMeanSales(statistic);
-        long expected = 5;
+        int actual = service.underMeanSales(statistic);
+        int expected = 5;
 
         Assertions.assertEquals(actual, expected);
     }
@@ -76,10 +76,10 @@ public class StatsServiceTest {
 
         StatsService service = new StatsService();
 
-        long[] statistic = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        int[] statistic = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
-        long actual = service.upMeanSales(statistic);
-        long expected = 5;
+        int actual = service.upMeanSales(statistic);
+        int expected = 5;
 
         Assertions.assertEquals(actual, expected);
     }

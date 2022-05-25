@@ -13,19 +13,15 @@ public class StatsService {
         return sum;
     }
 
-    public long meanSum(long[] statistic) {
+    public int meanSum(int[] statistic) {
 
-        int sum = 0;
+        int sum = sum(statistic);
+        int meanSale = sum / statistic.length;
 
-        for (int i = 0; i < statistic.length; i++) {
-
-            sum += statistic[i];
-
-        }
-        return sum / statistic.length;
+        return meanSale;
     }
 
-    public long maxSales(long[] statistic) {
+    public int maxSales(int[] statistic) {
 
         int maxMonth = 0;
         int month = 0;
@@ -39,7 +35,7 @@ public class StatsService {
         return maxMonth;
     }
 
-    public long minSales(long[] statistic) {
+    public int minSales(int[] statistic) {
 
         int minMonth = 0;
         int month = 0;
@@ -53,17 +49,13 @@ public class StatsService {
         return minMonth;
     }
 
-    public long underMeanSales(long[] statistic) {
-
-        int sum = 0;
-
-        for (int i = 0; i < statistic.length; i++) {
-            sum += statistic[i];
-        }
+    public int underMeanSales(int[] statistic) {
+        int sum = sum(statistic);
         int meanSale = sum / statistic.length;
         int underMeanMonth = 0;
 
         for (int i = 0; i < statistic.length; i++) {
+
             if (statistic[i] < meanSale) {
                 underMeanMonth++;
             }
@@ -71,21 +63,19 @@ public class StatsService {
         return underMeanMonth;
     }
 
-    public long upMeanSales(long[] statistic) {
+    public int upMeanSales(int[] statistic) {
 
-        int sum = 0;
-
-        for (int i = 0; i < statistic.length; i++) {
-            sum += statistic[i];
-        }
+        int sum = sum(statistic);
         int meanSale = sum / statistic.length;
-        int underMeanMonth = 0;
+        int upMeanMonth = 0;
 
         for (int i = 0; i < statistic.length; i++) {
             if (statistic[i] > meanSale) {
-                underMeanMonth++;
+                upMeanMonth++;
             }
         }
-        return underMeanMonth;
+        return upMeanMonth;
     }
 }
+
+
